@@ -1,0 +1,128 @@
+2019-04-24 14:03:19 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:03:19 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:03:19 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:03:19 : (MainProcess) : INFO :   --   starting process for command pti_clean_up
+2019-04-24 14:03:19 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:03:19 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:03:19 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:03:19 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:03:19 : (MainProcess) : WARNING : pti_clean_up --> Passed
+2019-04-24 14:03:19 : (MainProcess) : INFO :   --   starting process for command pti_make_call
+2019-04-24 14:03:19 : (MainProcess) : INFO : Set headset on
+2019-04-24 14:03:19 : (MainProcess) : INFO : Verify heds_off
+2019-04-24 14:03:19 : (MainProcess) : INFO : Send key headset
+2019-04-24 14:03:20 : (MainProcess) : INFO : send number:  0x102 0x100 0x101 0x102 0x100 0x106 0x102
+2019-04-24 14:03:23 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:03:23 : (MainProcess) : WARNING : Waiting incoming call
+2019-04-24 14:03:33 : (MainProcess) : INFO :   --   starting process for command pti_answer_call
+2019-04-24 14:03:33 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:03:33 : (MainProcess) : INFO : There is incoming call
+2019-04-24 14:03:33 : (MainProcess) : INFO : Send key speaker
+2019-04-24 14:03:36 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:03:36 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:03:36 : (MainProcess) : INFO : Answer call successfully
+2019-04-24 14:03:36 : (MainProcess) : WARNING : pti_answer_call --> Passed
+2019-04-24 14:03:36 : (MainProcess) : INFO :   --   starting process for command pti_end_call
+2019-04-24 14:03:36 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:03:37 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:03:37 : (MainProcess) : INFO : There is activate call
+2019-04-24 14:03:37 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:03:37 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:03:37 : (MainProcess) : INFO : Send key speaker
+2019-04-24 14:03:40 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:03:40 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:03:40 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:03:40 : (MainProcess) : WARNING : pti_end_call --> Passed
+2019-04-24 14:03:53 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:03:53 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:03:53 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:03:53 : (MainProcess) : INFO :   --   starting process for command pti_clean_up
+2019-04-24 14:03:53 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:03:53 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:03:53 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:03:53 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:03:53 : (MainProcess) : WARNING : pti_clean_up --> Passed
+2019-04-24 14:03:53 : (MainProcess) : INFO :   --   starting process for command pti_make_call
+2019-04-24 14:03:53 : (MainProcess) : INFO : Set headset on
+2019-04-24 14:03:53 : (MainProcess) : INFO : Verify heds_off
+2019-04-24 14:03:53 : (MainProcess) : INFO : Send key headset
+2019-04-24 14:03:54 : (MainProcess) : INFO : send number:  0x102 0x100 0x101 0x102 0x100 0x106 0x102
+2019-04-24 14:03:57 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:03:57 : (MainProcess) : WARNING : Waiting incoming call
+2019-04-24 14:04:07 : (MainProcess) : INFO :   --   starting process for command pti_answer_call
+2019-04-24 14:04:07 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:04:07 : (MainProcess) : INFO : There is incoming call
+2019-04-24 14:04:07 : (MainProcess) : INFO : Send key speaker
+2019-04-24 14:04:10 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:04:10 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:04:10 : (MainProcess) : INFO : Answer call successfully
+2019-04-24 14:04:10 : (MainProcess) : WARNING : pti_answer_call --> Passed
+2019-04-24 14:04:10 : (MainProcess) : INFO :   --   starting process for command pti_end_call
+2019-04-24 14:04:10 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:04:10 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:04:10 : (MainProcess) : INFO : There is activate call
+2019-04-24 14:04:10 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:04:10 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:04:10 : (MainProcess) : INFO : Send key speaker
+2019-04-24 14:04:13 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:04:13 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:04:13 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:04:13 : (MainProcess) : WARNING : pti_end_call --> Passed
+2019-04-24 14:06:17 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:06:17 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:06:17 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:06:17 : (MainProcess) : INFO :   --   starting process for command pti_clean_up
+2019-04-24 14:06:17 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:06:17 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:06:17 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:06:17 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:06:17 : (MainProcess) : WARNING : pti_clean_up --> Passed
+2019-04-24 14:06:17 : (MainProcess) : INFO :   --   starting process for command pti_make_call
+2019-04-24 14:06:17 : (MainProcess) : INFO : Set headset on
+2019-04-24 14:06:17 : (MainProcess) : INFO : Verify heds_off
+2019-04-24 14:06:17 : (MainProcess) : INFO : Send key headset
+2019-04-24 14:06:18 : (MainProcess) : INFO : send number:  0x102 0x100 0x101 0x102 0x100 0x106 0x102
+2019-04-24 14:06:21 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:06:21 : (MainProcess) : WARNING : Waiting incoming call
+2019-04-24 14:06:31 : (MainProcess) : INFO :   --   starting process for command pti_answer_call
+2019-04-24 14:06:31 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:06:31 : (MainProcess) : INFO : There is incoming call
+2019-04-24 14:06:31 : (MainProcess) : INFO : Send key speaker
+2019-04-24 14:06:34 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:06:34 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:06:34 : (MainProcess) : INFO : Answer call successfully
+2019-04-24 14:06:34 : (MainProcess) : WARNING : pti_answer_call --> Passed
+2019-04-24 14:06:34 : (MainProcess) : INFO :   --   starting process for command pti_end_call
+2019-04-24 14:06:34 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:06:34 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:06:34 : (MainProcess) : INFO : There is activate call
+2019-04-24 14:06:34 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:06:34 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:06:34 : (MainProcess) : INFO : Send key speaker
+2019-04-24 14:06:37 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:06:37 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:06:37 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:06:37 : (MainProcess) : WARNING : pti_end_call --> Passed
+2019-04-24 14:07:15 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:07:15 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:07:15 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:07:15 : (MainProcess) : INFO :   --   starting process for command pti_clean_up
+2019-04-24 14:07:15 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:07:15 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:07:15 : (MainProcess) : INFO : Verify RING_FL
+2019-04-24 14:07:15 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:07:15 : (MainProcess) : WARNING : pti_clean_up --> Passed
+2019-04-24 14:07:15 : (MainProcess) : INFO :   --   starting process for command pti_make_call
+2019-04-24 14:07:15 : (MainProcess) : INFO : Set headset on
+2019-04-24 14:07:15 : (MainProcess) : INFO : Verify heds_off
+2019-04-24 14:07:15 : (MainProcess) : INFO : Send key headset
+2019-04-24 14:07:16 : (MainProcess) : INFO : send number:  0x102 0x100 0x101 0x102 0x100 0x106 0x102
+2019-04-24 14:07:19 : (MainProcess) : INFO :   --   Initialising pti command
+2019-04-24 14:07:19 : (MainProcess) : INFO :   --   starting process for command pti_end_call
+2019-04-24 14:07:19 : (MainProcess) : INFO : Verify HEDS_ON
+2019-04-24 14:07:19 : (MainProcess) : INFO : Verify SPKR_ON
+2019-04-24 14:07:19 : (MainProcess) : INFO : There is no activate call
+2019-04-24 14:07:19 : (MainProcess) : ERROR : execute failed with exception :<class 'AssertionError'> :: pti_end_call Failed
+
+
+

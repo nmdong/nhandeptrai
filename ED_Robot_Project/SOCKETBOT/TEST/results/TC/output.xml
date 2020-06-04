@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)"
+	generated="20190424 14:07:15.609" rpa="false">
+	<suite id="s1" name="Call"
+		source="C:\Users\Administrator\ED_Lab\SOCKETBOT\TEST\call.robot">
+		<test id="s1-t1" name="TC1">
+			<kw name="Pti Clean Up" library="sipPhoneA">
+				<msg timestamp="20190424 14:07:15.672" level="INFO"> -- starting
+					process for command pti_clean_up</msg>
+				<msg timestamp="20190424 14:07:15.672" level="INFO">Verify SPKR_ON</msg>
+				<msg timestamp="20190424 14:07:15.687" level="INFO">Verify HEDS_ON</msg>
+				<msg timestamp="20190424 14:07:15.687" level="INFO">Verify RING_FL</msg>
+				<msg timestamp="20190424 14:07:15.703" level="INFO">Verify SPKR_ON</msg>
+				<msg timestamp="20190424 14:07:15.703" level="WARN">pti_clean_up --&gt;
+					Passed</msg>
+				<status status="PASS" starttime="20190424 14:07:15.672"
+					endtime="20190424 14:07:15.703"></status>
+			</kw>
+			<status status="PASS" starttime="20190424 14:07:15.672"
+				endtime="20190424 14:07:15.703" critical="yes"></status>
+		</test>
+		<test id="s1-t2" name="TC2">
+			<kw name="Pti Make Call" library="sipPhoneA">
+				<arguments>
+					<arg>2012062</arg>
+				</arguments>
+				<msg timestamp="20190424 14:07:15.718" level="INFO"> -- starting
+					process for command pti_make_call</msg>
+				<msg timestamp="20190424 14:07:15.718" level="INFO">Set headset on</msg>
+				<msg timestamp="20190424 14:07:15.718" level="INFO">Verify heds_off</msg>
+				<msg timestamp="20190424 14:07:15.718" level="INFO">Send key headset</msg>
+				<msg timestamp="20190424 14:07:16.718" level="INFO">send number: 0x102
+					0x100 0x101 0x102 0x100 0x106 0x102</msg>
+				<status status="PASS" starttime="20190424 14:07:15.703"
+					endtime="20190424 14:07:19.719"></status>
+			</kw>
+			<status status="PASS" starttime="20190424 14:07:15.703"
+				endtime="20190424 14:07:19.719" critical="yes"></status>
+		</test>
+		<test id="s1-t3" name="TC3">
+			<kw name="sipPhoneC.pti answer call">
+				<msg timestamp="20190424 14:07:19.719" level="FAIL">No keyword with
+					name 'sipPhoneC.pti answer call' found. Did you mean:
+					sipPhoneB.Pti Answer Call
+					sipPhoneA.Pti Answer Call</msg>
+				<status status="FAIL" starttime="20190424 14:07:19.719"
+					endtime="20190424 14:07:19.719"></status>
+			</kw>
+			<status status="FAIL" starttime="20190424 14:07:19.719"
+				endtime="20190424 14:07:19.719" critical="yes">No keyword with name
+				'sipPhoneC.pti answer call' found. Did you mean:
+				sipPhoneB.Pti Answer Call
+				sipPhoneA.Pti Answer Call</status>
+		</test>
+		<test id="s1-t4" name="TC4">
+			<kw name="Pti End Call" library="sipPhoneB">
+				<msg timestamp="20190424 14:07:19.719" level="INFO"> -- starting
+					process for command pti_end_call</msg>
+				<msg timestamp="20190424 14:07:19.719" level="INFO">Verify HEDS_ON</msg>
+				<msg timestamp="20190424 14:07:19.734" level="INFO">Verify SPKR_ON</msg>
+				<msg timestamp="20190424 14:07:19.750" level="INFO">There is no
+					activate call</msg>
+				<msg timestamp="20190424 14:07:19.750" level="ERROR">execute failed with
+					exception :&lt;class 'AssertionError'&gt; :: pti_end_call Failed
+
+
+				</msg>
+				<msg timestamp="20190424 14:07:19.766" level="FAIL">pti_end_call Failed
+
+
+				</msg>
+				<status status="FAIL" starttime="20190424 14:07:19.719"
+					endtime="20190424 14:07:19.766"></status>
+			</kw>
+			<status status="FAIL" starttime="20190424 14:07:19.719"
+				endtime="20190424 14:07:19.766" critical="yes">pti_end_call Failed
+
+
+			</status>
+		</test>
+		<status status="FAIL" starttime="20190424 14:07:15.609"
+			endtime="20190424 14:07:19.766"></status>
+	</suite>
+	<statistics>
+		<total>
+			<stat pass="2" fail="2">Critical Tests</stat>
+			<stat pass="2" fail="2">All Tests</stat>
+		</total>
+		<tag>
+		</tag>
+		<suite>
+			<stat pass="2" fail="2" id="s1" name="Call">Call</stat>
+		</suite>
+	</statistics>
+	<errors>
+		<msg timestamp="20190424 14:07:15.703" level="WARN">pti_clean_up --&gt;
+			Passed</msg>
+		<msg timestamp="20190424 14:07:19.750" level="ERROR">execute failed with
+			exception :&lt;class 'AssertionError'&gt; :: pti_end_call Failed
+
+
+		</msg>
+	</errors>
+</robot>

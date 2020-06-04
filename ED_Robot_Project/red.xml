@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <robotExecEnvironment path="C:/Users/GI-LAB/AppData/Local/Programs/Python/Python37" interpreter="Python"/>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="ED_keywords" path="ED_Robot_Project/apps/ED_webs/ED_keywords.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="ED_webs.ED_keywords" path="ED_Robot_Project/apps/ED_webs/ED_keywords.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SSHLibrary.library" path="ED_Robot_Project/SSHLibrary-master/src/SSHLibrary/library.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SSHLibrary.library.SSHLibrary" path="ED_Robot_Project/SSHLibrary-master/src/SSHLibrary/library.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="JMeterClasses" path="ED_Robot_Project/JmetterLibrary/JMeterClasses.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="JMeterLib" path="ED_Robot_Project/JmetterLibrary/JMeterLib.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="ED_webs.PTI_9611" path="ED_Robot_Project/apps/ED_webs/PTI_9611.py" dynamic="false"/>
+    <pythonpath>
+        <path location="C:\Users\GI-LAB\ED-WorkSpace\ED_Robot_Project\apps"/>
+    </pythonpath>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

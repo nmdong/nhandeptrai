@@ -1,0 +1,65 @@
+2019/04/24 17:42:55 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: Loading user properties from: D:\Robot\apache-jmeter-2.13\bin\user.properties 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: Loading system properties from: D:\Robot\apache-jmeter-2.13\bin\system.properties 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: Version 2.13 r1665067 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: java.version=1.8.0_172 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: os.name=Windows 10 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: os.arch=amd64 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: os.version=10.0 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: file.encoding=Cp1258 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: JMeterHome=D:\Robot\apache-jmeter-2.13 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: user.dir  =C:\Users\Administrator\ED_Lab\ED\JmetterLibrary 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: PWD       =C:\Users\Administrator\ED_Lab\ED\JmetterLibrary 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: IP: 100.20.43.154 Name: DESKTOP-26DVJTU FullName: DESKTOP-26DVJTU 
+2019/04/24 17:42:55 INFO  - jmeter.services.FileServer: Default base='C:\Users\Administrator\ED_Lab\ED\JmetterLibrary' 
+2019/04/24 17:42:55 INFO  - jmeter.services.FileServer: Set new base='D:\ED\JmetterFile' 
+2019/04/24 17:42:55 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2019/04/24 17:42:55 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2019/04/24 17:42:55 INFO  - jmeter.save.SaveService: Using SaveService properties file version 1656252 
+2019/04/24 17:42:55 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.8 
+2019/04/24 17:42:55 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2019/04/24 17:42:55 INFO  - jmeter.save.SaveService: Loading file: D:\ED\JmetterFile\TC175.jmx 
+2019/04/24 17:42:55 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2019/04/24 17:42:55 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2019/04/24 17:42:55 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2019/04/24 17:42:55 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2019/04/24 17:42:55 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2019/04/24 17:42:55 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2019/04/24 17:42:55 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2019/04/24 17:42:55 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2019/04/24 17:42:55 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2019/04/24 17:42:55 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2019/04/24 17:42:55 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2019/04/24 17:42:55 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2019/04/24 17:42:55 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2019/04/24 17:42:55 INFO  - jmeter.JMeter: Running test (1556102575714) 
+2019/04/24 17:42:55 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 
+2019/04/24 17:42:55 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Thread Group. 
+2019/04/24 17:42:55 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2019/04/24 17:42:55 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2019/04/24 17:42:55 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2019/04/24 17:42:55 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2019/04/24 17:42:55 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2019/04/24 17:42:55 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2019/04/24 17:42:55 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-1 
+2019/04/24 17:42:55 INFO  - jmeter.services.FileServer: Stored: D:\TMA\TaiLieu\EngagementDesigner\JMeter\kha\email_Subject.csv 
+2019/04/24 17:42:55 ERROR - jmeter.config.CSVDataSet: java.io.FileNotFoundException: D:\TMA\TaiLieu\EngagementDesigner\JMeter\kha\email_Subject.csv (The system cannot find the path specified) 
+2019/04/24 17:42:55 INFO  - jmeter.protocol.http.sampler.HTTPJavaImpl: Maximum connection retries = 10 
+2019/04/24 17:42:55 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2019/04/24 17:42:55 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2019/04/24 17:42:55 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2019/04/24 17:42:55 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2019/04/24 17:42:55 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2019/04/24 17:42:55 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2019/04/24 17:42:56 INFO  - jmeter.util.SSLManager: JmeterKeyStore Location:  type JKS 
+2019/04/24 17:42:56 INFO  - jmeter.util.SSLManager: KeyStore created OK 
+2019/04/24 17:42:56 WARN  - jmeter.util.SSLManager: Keystore file not found, loading empty keystore 
+2019/04/24 17:42:56 INFO  - jmeter.threads.JMeterThread: Thread is done: Thread Group 1-1 
+2019/04/24 17:42:56 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-1 
+2019/04/24 17:42:56 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2019/04/24 17:42:56 INFO  - jmeter.reporters.Summariser: summary =      1 in   0,4s =    2,4/s Avg:   308 Min:   308 Max:   308 Err:     0 (0,00%) 

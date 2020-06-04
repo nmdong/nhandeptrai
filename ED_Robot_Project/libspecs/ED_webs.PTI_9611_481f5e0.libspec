@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="ED_webs.PTI_9611" type="LIBRARY" format="ROBOT" scope="TEST" namedargs="true" generated="2020-05-13T07:47:55Z" specversion="2" source="..\..\..\ED-WorkSpace\ED_Robot_Project\apps\ED_webs\PTI_9611.py" lineno="5">
+<version></version>
+<scope>test case</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``ED_webs.PTI_9611``.</doc>
+<init lineno="6">
+<arguments>
+<arg>ip=None</arg>
+<arg>port=None</arg>
+</arguments>
+<doc>Initialize self.  See help(type(self)) for accurate signature.</doc>
+</init>
+<kw name="Pti Answer Call" lineno="46">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Answer Call With Headset" lineno="60">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Bridge Line Appearance" lineno="156">
+<arguments>
+<arg>lineNumber</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Clean Up" lineno="179">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti End Call" lineno="34">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti End Conference" lineno="168">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Log In H323" lineno="118">
+<arguments>
+<arg>username</arg>
+<arg>password</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Log In SIP" lineno="129">
+<arguments>
+<arg>username</arg>
+<arg>password</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Log Out H323" lineno="96">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Log Out SIP" lineno="107">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Make Call" lineno="17">
+<arguments>
+<arg>extension</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Make Conference Call" lineno="140">
+<arguments>
+<arg>bridge</arg>
+<arg>code</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Press Key" lineno="83">
+<arguments>
+<arg>key</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Pti Take Screen Shot" lineno="72">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Set Tc Name" lineno="13">
+<arguments>
+<arg>tc_name</arg>
+</arguments>
+<doc></doc>
+</kw>
+</keywordspec>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="ED_webs.ED_keywords" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2020-05-18T07:09:21Z" specversion="2" source="..\..\..\ED-WorkSpace\ED_Robot_Project\apps\ED_webs\ED_keywords.py" lineno="34">
+<version></version>
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``ED_webs.ED_keywords``.</doc>
+<init lineno="56">
+<arguments>
+<arg>ip_devices=None</arg>
+</arguments>
+<doc>Example of docstring on the __init__ method.
+
+Examples:
+    N/A
+
+Args:
+    desired_capabilities: - A dictionary of capabilities to request when
+     starting the browser session. Required parameter.
+    command_executor: - Either a string representing URL of the remote server or a custom
+     remote_connection.RemoteConnection object. Defaults to 'http://127.0.0.1:4444/wd/hub'.</doc>
+</init>
+<kw name="Add Route Called Party" lineno="271">
+<arguments>
+<arg>wfname</arg>
+<arg>routing_name</arg>
+<arg>PRIORITY</arg>
+<arg>EXTENSION2</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Add Route Calling Party" lineno="274">
+<arguments>
+<arg>wfname</arg>
+<arg>routing_name</arg>
+<arg>PRIORITY</arg>
+<arg>EXTENSION1</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Adf" lineno="52">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Check Wf Instences" lineno="277">
+<arguments>
+<arg>wfname</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Clean Up TC And Close Browser" lineno="283">
+<arguments>
+<arg>wfname</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Close Browser" lineno="130">
+<arguments>
+</arguments>
+<doc>Close web browser
+
+The __init__ method may be documented in either the class level
+docstring, or as a docstring on the __init__ method itself.
+
+Either form is acceptable, but the two should not be mixed. Choose one
+convention to document the __init__ method and be consistent with it.
+
+Note:
+    Do not include the `self` parameter in the ``Args`` section.
+
+Args:  
+    url (str): Link to website</doc>
+</kw>
+<kw name="Delete Routing Rule" lineno="280">
+<arguments>
+<arg>routing_name</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Edit Rules Callintercept" lineno="260">
+<arguments>
+<arg>ruleset_name</arg>
+<arg>extension1</arg>
+<arg>Yes_or_No</arg>
+<arg>prompt</arg>
+<arg>calling_or_called</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Edit Rules Http" lineno="264">
+<arguments>
+<arg>ruleset_name</arg>
+<arg>extension1</arg>
+<arg>Yes_or_No</arg>
+<arg>prompt</arg>
+<arg>calling_or_called</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Import Wf" lineno="227">
+<arguments>
+<arg>locator</arg>
+<arg>wfname</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Login Admin Page" lineno="190">
+<arguments>
+<arg>admin_userName</arg>
+<arg>admin_password</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Login Designer Page" lineno="211">
+<arguments>
+<arg>designer_userName</arg>
+<arg>designer_password</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Login User Page" lineno="170">
+<arguments>
+<arg>userName</arg>
+<arg>password</arg>
+</arguments>
+<doc>login user
+
+The method may be login user.
+return: TRUE/FALSE
+
+ex: verify_login_page</doc>
+</kw>
+<kw name="Navigate To AdminConsole" lineno="246">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Open Browser" lineno="81">
+<arguments>
+<arg>url</arg>
+</arguments>
+<doc>Launch web browser with ATDA server info
+
+The __init__ method may be documented in either the class level
+docstring, or as a docstring on the __init__ method itself.
+
+Either form is acceptable, but the two should not be mixed. Choose one
+convention to document the __init__ method and be consistent with it.
+
+Note:
+    Do not include the `self` parameter in the ``Args`` section.
+
+Args:  
+    url (str): Link to website</doc>
+</kw>
+<kw name="Open Browser 2" lineno="106">
+<arguments>
+<arg>url</arg>
+</arguments>
+<doc>Launch web browser with ATDA server info
+
+The __init__ method may be documented in either the class level
+docstring, or as a docstring on the __init__ method itself.
+
+Either form is acceptable, but the two should not be mixed. Choose one
+convention to document the __init__ method and be consistent with it.
+
+Note:
+    Do not include the `self` parameter in the ``Args`` section.
+
+Args:  
+    url (str): Link to website</doc>
+</kw>
+<kw name="Open New Tab" lineno="256">
+<arguments>
+<arg>URL_admin</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Save As Wf" lineno="237">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Save Wf" lineno="232">
+<arguments>
+<arg>wfname</arg>
+<arg>ruleset_name</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Switch Tab" lineno="267">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Validate And Deploy Wf" lineno="241">
+<arguments>
+<arg>wfname</arg>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Verify Admin Page" lineno="195">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Verify Designer Page" lineno="216">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Verify Login Admin Page" lineno="183">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Verify Login Designer Page" lineno="204">
+<arguments>
+</arguments>
+<doc></doc>
+</kw>
+<kw name="Verify Login Page" lineno="153">
+<arguments>
+</arguments>
+<doc>verify login page
+
+The method may be checking login page.
+return: TRUE/FALSE
+
+ex: verify_login_page</doc>
+</kw>
+</keywordspec>

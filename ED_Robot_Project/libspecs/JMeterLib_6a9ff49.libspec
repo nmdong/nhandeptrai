@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="JMeterLib" type="library" format="ROBOT" generated="20200504 19:28:18">
+<version></version>
+<scope>test case</scope>
+<namedargs>yes</namedargs>
+<doc>This library provides simple way to integrate Robot Framework and JMeter. JTL output
+files can be analysed and converted to HTML, Python dictionary or SQLite format.
+
+Version 1.2 released on 29th of December 2017.
+
+What's new:
+
+- adapted to new csv log format
+
+Following software versions were used during development:
+- Python-2.7.14
+- robotframework-3.0.2
+- robotframework-ride-1.5.2.1
+- jmeter 2.12
+- jmeter 3.3
+
+
+Author: Marcin Kowalczyk
+
+Website: http://sourceforge.net/projects/rf-jmeter-py/
+
+Installation:
+- run command: pip install robotframework-jmeterlibrary
+
+OR
+- download, unzip and run command: python setup.py install
+
+Example for running JMeter and parsing results in single keyword:
+ | run jmeter analyse jtl convert | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl |
+
+Example for running JMeter and parsing results in separate keyword:
+| ${logPath}= | set variable | D:/Tests/output1.jtl |  |
+| run jmeter | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | ${logPath} |
+| analyse jtl convert | ${logPath} |  |  |
+
+Example for reading parsed contents:
+| ${result} | analyse jtl convert | ${logPath} |  |
+| log | ${result} |  |  |
+| : FOR | ${ELEMENT} | IN |     @{result} |
+|  | log dictionary     | ${ELEMENT} |  |</doc>
+<kw name="Analyse Jtl">
+<arguments>
+<arg>logFilePath</arg>
+</arguments>
+<doc>Parses JMeter log file.
+Returns list of dictionaries containing summary report of parsed output.
+Parameters:
+    - logFilePath - path to a log file
+Examples:
+| analyse jtl | D:/Tests/output1.jtl |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Analyse Jtl Convert">
+<arguments>
+<arg>logFilePath</arg>
+<arg>disableReports=None</arg>
+</arguments>
+<doc>Parses JMeter log file. Converts results into HTML and SQLite format.
+Returns list of dictionaries containing summary report of parsed output.
+Parameters:
+    - logFilePath - path to a log file
+    - disableReports - optional paramter for disabling particular parts of html report.
+     It requires integer value which is composed of bits which meaning is
+     as follows (binary numebers in Python notation):
+                 0b00000001 -&gt; disable aggregated report and graph;
+                 0b00000010 -&gt; disable aggregated samples;
+                 0b00000100 -&gt; disable response time graph;
+                 0b00001000 -&gt; disable all samples;
+      For example disabling aggr samples and resp time graph needs 0b00000110 which is integer 6.
+Examples:
+| analyse jtl convert | D:/Tests/output1.jtl |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Analyse Jtl Convert To Db">
+<arguments>
+<arg>logFilePath</arg>
+</arguments>
+<doc>Parses JMeter log file. Converts results into SQLite format.
+Returns list of dictionaries containing summary report of parsed output.
+Parameters:
+    - logFilePath - path to a log file
+Examples:
+| analyse jtl convert to db | D:/Tests/output1.jtl |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Analyse Jtl Convert To Html">
+<arguments>
+<arg>logFilePath</arg>
+<arg>disableReports=None</arg>
+</arguments>
+<doc>Parses JMeter log file. Converts results into HTML format.
+Returns list of dictionaries containing summary report of parsed output.
+Parameters:
+    - logFilePath - path to a log file
+    - disableReports - optional paramter for disabling particular parts of html report.
+     It requires integer value which is composed of bits which meaning is
+     as follows (binary numebers in Python notation):
+                 0b00000001 -&gt; disable aggregated report and graph;
+                 0b00000010 -&gt; disable aggregated samples;
+                 0b00000100 -&gt; disable response time graph;
+                 0b00001000 -&gt; disable all samples;
+      For example disabling aggr samples and resp time graph needs 0b00000110 which is integer 6.
+Examples:
+| analyse jtl convert to html | D:/Tests/output1.jtl |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run Jmeter">
+<arguments>
+<arg>jmeterPath</arg>
+<arg>testPlanPath</arg>
+<arg>logFilePath</arg>
+<arg>otherParams=</arg>
+</arguments>
+<doc>Runs JMeter. Returns None.
+Parameters:
+    - jmeterPath - path to JMeter executable file
+    - testPlanPath - path to jmx file
+    - logFilePath - path to a log file
+    - otherParams (optional) - other parameters to be called
+Examples:
+| run jmeter | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl |
+| run jmeter | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl | -H my.proxy.server -P 8000 |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run Jmeter Analyse Jtl">
+<arguments>
+<arg>jmeterPath</arg>
+<arg>testPlanPath</arg>
+<arg>logFilePath</arg>
+<arg>otherParams=</arg>
+</arguments>
+<doc>Runs JMeter and parses log file.
+Returns list of dictionaries containing summary report of parsed output.
+Parameters:
+    - jmeterPath - path to JMeter executable file
+    - testPlanPath - path to jmx file
+    - logFilePath - path to a log file
+    - otherParams (optional) - other parameters to be called
+Examples:
+| run jmeter analyse jtl | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl |
+| run jmeter analyse jtl | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl | -H my.proxy.server -P 8000 |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run Jmeter Analyse Jtl Convert">
+<arguments>
+<arg>jmeterPath</arg>
+<arg>testPlanPath</arg>
+<arg>logFilePath</arg>
+<arg>otherParams=</arg>
+<arg>disableReports=None</arg>
+</arguments>
+<doc>Runs JMeter and parses log file. Converts results into HTML and SQLite format.
+Returns list of dictionaries containing summary report of parsed output.
+Parameters:
+    - jmeterPath - path to JMeter executable file
+    - testPlanPath - path to jmx file
+    - logFilePath - path to a log file
+    - otherParams (optional) - other parameters to be called
+    - disableReports - optional paramter for disabling particular parts of html report.
+     It requires integer value which is composed of bits which meaning is
+     as follows (binary numebers in Python notation):
+                 0b00000001 -&gt; disable aggregated report and graph;
+                 0b00000010 -&gt; disable aggregated samples;
+                 0b00000100 -&gt; disable response time graph;
+                 0b00001000 -&gt; disable all samples;
+      For example disabling aggr samples and resp time graph needs 0b00000110 which is integer 6.
+Examples:
+| run jmeter analyse jtl convert | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl |
+| run jmeter analyse jtl convert | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl | -H my.proxy.server -P 8000 |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run Jmeter Analyse Jtl Convert To Db">
+<arguments>
+<arg>jmeterPath</arg>
+<arg>testPlanPath</arg>
+<arg>logFilePath</arg>
+<arg>otherParams=</arg>
+</arguments>
+<doc>Runs JMeter and parses log file. Converts results into SQLite format.
+Returns list of dictionaries containing summary report of parsed output.
+Parameters:
+    - jmeterPath - path to JMeter executable file
+    - testPlanPath - path to jmx file
+    - logFilePath - path to a log file
+    - otherParams (optional) - other parameters to be called
+Examples:
+| run jmeter analyse jtl convert to db | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl |
+| run jmeter analyse jtl convert to db | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl | -H my.proxy.server -P 8000 |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run Jmeter Analyse Jtl Convert To Html">
+<arguments>
+<arg>jmeterPath</arg>
+<arg>testPlanPath</arg>
+<arg>logFilePath</arg>
+<arg>otherParams=</arg>
+<arg>disableReports=None</arg>
+</arguments>
+<doc>Runs JMeter and parses log file. Converts results into html format.
+Returns list of dictionaries containing summary report of parsed output.
+Parameters:
+    - jmeterPath - path to JMeter executable file
+    - testPlanPath - path to jmx file
+    - logFilePath - path to a log file
+    - otherParams (optional) - other parameters to be called
+    - disableReports - optional paramter for disabling particular parts of html report.
+     It requires integer value which is composed of bits which meaning is
+     as follows (binary numebers in Python notation):
+                 0b00000001 -&gt; disable aggregated report and graph;
+                 0b00000010 -&gt; disable aggregated samples;
+                 0b00000100 -&gt; disable response time graph;
+                 0b00001000 -&gt; disable all samples;
+      For example disabling aggr samples and resp time graph needs 0b00000110 which is integer 6.
+Examples:
+| run jmeter analyse jtl convert to html | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl |
+| run jmeter analyse jtl convert to html | D:/apache-jmeter-2.12/bin/jmeter.bat | D:/Tests/Test1Thread1Loop.jmx | D:/Tests/output1.jtl | -H my.proxy.server -P 8000 |</doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>
